@@ -28,7 +28,7 @@ public class ThreadSafetySingleton {
          * Thread 1 and Thread 2 call getInstance() simultaneously.
          * Both threads check the first condition: if (instance == null).
          * Since instance is null, both threads pass this check. However,
-         * since the first if is outside the synchronized block,
+         * since the first "if" is outside the synchronized block,
          * both threads can pass the check concurrently.
          */
         if (instance == null) {
